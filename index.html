@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <h1>javaScript basics assignment 5 - Please open console window to view results</h1>
+     
+    <script>
+      var num1 = 5;                 //Define var num1 and assign it value of 5 
+      var num2 = 10;
+
+      var result = num1 + num2;
+
+      console.log(result);          //Log results to the console
+      console.log(num1 + num2);
+
+      var string1 = "The cat ";     //Define a var string1 of data type String
+      var string2 = "is fat.";
+
+      var result = string1 + string2;
+
+      console.log(result);
+
+      var colors = ["Red" , "Blue"];  //Define a variable of data type array
+      console.log("This is the first color of the array : " +colors[0]);
+
+
+      //Below are examples of functions
+
+      function doAddition(x, y) {      //This function adds two numbers   
+        return x + y;
+      }
+
+      var result = doAddition(10, 20);
+      console.log(result);
+
+      function sayHi(name) {
+        return alert("hi " + name);
+      }
+
+      sayHi("Welcome_to_NYCDA");
+      
+      //Below are solutions to Four Problems
+
+      var num = 5;                    //Soln 1 : Checks if variable is less than 10
+
+      if (num < 10) {
+        console.log("your number, " + num + ", is less than 10");
+      } else {
+        console.log("your number, " + num + ", is greater or equal to 10");
+      } 
+
+      function noArguments() {          //Soln 2 : Function with no arguments that prints to console
+        return console.log("I am a function with no arguments!");
+      }
+
+      noArguments();
+
+
+
+      function gimmeAPrize(door) {      //Soln3 : Function that provides a prize alert for virtual door
+        if (door === 1) {
+          return alert("You won the 1st prize");
+        } else if (door === 2) {
+          return alert("You won the 2nd prize");
+        } else if (door === 3) {
+          return alert("You won the 3rd prize");
+        } 
+
+      }
+
+      gimmeAPrize(1);
+      gimmeAPrize(2);
+      
+
+      
+      var row = [10 , 20 , 30];           //Soln 4: An example of a multi dimensional array
+      var col = [5 , 10 , 15];
+      var multiArray = [row , col];
+      console.log(multiArray[0]);
+      console.log(multiArray[1]);
+
+
+
+    </script>
+  </body>
+</html>
